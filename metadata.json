@@ -1,0 +1,6 @@
+{
+  "name": "hackpath",
+  "description": "Interactive CTF Companion, command builder, and AI vulnerability analysis simulator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
