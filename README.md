@@ -24,7 +24,7 @@ Unauthorized access of third-party platforms is completely **illegal** and crimi
 
 ## 📥 Installation & Local Setup
 
-To launch the full interactive full-stack **hackpath** web application suite, follow the instructions below:
+To launch the full interactive full-stack **Hackpath** web application suite, follow the instructions below:
 
 ### 1. Requirements
 Ensure you have the following packages installed on your system:
@@ -66,7 +66,7 @@ npm run start
 
 ## 🛠️ App Description & Key Features
 
-**hackpath** integrates a visual full-stack interface with a sleek obsidian-dark layout, custom-tailored for cybersecurity learners. The application is divided into six modular workspaces:
+**Hackpath** integrates a visual full-stack interface with a sleek obsidian-dark layout, custom-tailored for cybersecurity learners. The application is divided into six modular workspaces:
 
 ### 1. Interactive Command Builder & Terminal Simulator
 - **Visual Prompting**: Forget complex commands. Pick a category (Recon, Crack, Bruteforce, Post-Exploit), select your tool of choice (e.g., `nmap`, `gobuster`, `hydra`, `hashcat`, etc.), and input your targets.
@@ -109,7 +109,7 @@ npm run start
 
 ## 📥 Installazione e Avvio Locale
 
-Per avviare la suite web interattiva di **hackpath**, segui questi semplici passaggi:
+Per avviare la suite web interattiva di **Hackpath**, segui questi semplici passaggi:
 
 ### 1. Requisiti
 Assicurati di avere installato sul sistema ospite:
@@ -151,7 +151,7 @@ npm run start
 
 ## 🛠️ Descrizione dell'Applicazione e Funzionalità Chiave
 
-**hackpath** è una suite didattica integrata con un design dark minimal ed elegante, progettata per razionalizzare l'apprendimento pratico della cybersecurity offensiva. L'app si articola in sei hub interattivi principali:
+**Hackpath** è una suite didattica integrata con un design dark minimal ed elegante, progettata per razionalizzare l'apprendimento pratico della cybersecurity offensiva. L'app si articola in sei hub interattivi principali:
 
 ### 1. Costruttore di Comandi e Simulatore Terminale
 - **Composizione Semplificata**: Scegli una categoria (Recon, Crack, Bruteforce, Post-Exploit) ed inserisci i target, automatizzando l'immissione della complessa sintassi CLI.
@@ -180,13 +180,6 @@ npm run start
 
 ### 7. Diagnostica Host System Doctor
 - Misura la disponibilità dei tool difensivi sul tuo PC (Python, Nmap, Gobuster, Hydra, John) fornendoti i comandi precisi ed immediati per l'installazione su Linux, macOS e Windows.
-
----
-### 📄 Licenza e Termini d'Uso
-**Licenza di Libera Diffusione e Uso**
-- Questa applicazione e i suoi contenuti (manuali e domande) sono forniti **gratuitamente** per scopi educativi.
-- È consentito l'uso e la distribuzione gratuita dell'applicazione.
-- **Divieto di Modifica**: È severamente vietato modificare, alterare o creare opere derivate dal codice sorgente o dai contenuti di questa applicazione senza esplicita autorizzazione.
 
 ---
 ### 📄 Licenza e Termini d'Uso
