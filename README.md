@@ -1,4 +1,3 @@
-# Hackpath
 
 ```
   ██╗  ██╗ █████╗  ██████╗██╗  ██╗██████╗  █████╗ ████████╗██╗  ██╗
@@ -183,5 +182,25 @@ npm run start
 - Misura la disponibilità dei tool difensivi sul tuo PC (Python, Nmap, Gobuster, Hydra, John) fornendoti i comandi precisi ed immediati per l'installazione su Linux, macOS e Windows.
 
 ---
+### 📄 Licenza e Termini d'Uso
+**Licenza di Libera Diffusione e Uso**
+- Questa applicazione e i suoi contenuti (manuali e domande) sono forniti **gratuitamente** per scopi educativi.
+- È consentito l'uso e la distribuzione gratuita dell'applicazione.
+- **Divieto di Modifica**: È severamente vietato modificare, alterare o creare opere derivate dal codice sorgente o dai contenuti di questa applicazione senza esplicita autorizzazione.
 
-*hackpath — built for learners, by learners. Practice legally, study safely.*
+---
+### 📄 Licenza e Termini d'Uso
+**Licenza di Libera Diffusione e Uso**
+- Questa applicazione e i suoi contenuti (manuali e domande) sono forniti **gratuitamente** per scopi educativi.
+- È consentito l'uso e la distribuzione gratuita dell'applicazione.
+- **Divieto di Modifica**: È severamente vietato modificare, alterare o creare opere derivate dal codice sorgente o dai contenuti di questa applicazione senza esplicita autorizzazione.
+
+---
+
+© Chiara Berti 13 - 2026
+
+*Hackpath — built for learners, by learners. Practice legally, study safely.* 
+
+
+
+
