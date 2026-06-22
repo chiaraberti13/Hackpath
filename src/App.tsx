@@ -7,7 +7,8 @@ import WorkspaceManager from "./components/WorkspaceManager";
 import ReportBuilder from "./components/ReportBuilder";
 import DoctorCheck from "./components/DoctorCheck";
 import CliDownloader from "./components/CliDownloader";
-import { Terminal, Shield, Sparkles, FolderCode, FileText, HeartPulse, Globe, Menu, ShieldAlert, Code } from "lucide-react";
+import PayloadHelper from "./components/PayloadHelper";
+import { Terminal, Shield, Sparkles, FolderCode, FileText, HeartPulse, Globe, Menu, ShieldAlert, Code, Cpu } from "lucide-react";
 
 export default function App() {
   const [lang, setLang] = useState<"it" | "en">("it");
@@ -193,6 +194,7 @@ export default function App() {
             { id: "builder", labelIt: "Command Builder", labelEn: "Command Builder", icon: <Terminal className="w-4 h-4" /> },
             { id: "wizard", labelIt: "AI Wizard", labelEn: "AI Wizard Mentor", icon: <Sparkles className="w-4 h-4" /> },
             { id: "logs", labelIt: "Risolutore Log (AI)", labelEn: "Logs solver (AI)", icon: <FolderCode className="w-4 h-4" /> },
+            { id: "payload", labelIt: "Payload & Evasione", labelEn: "Payload & Evasion", icon: <Cpu className="w-4 h-4" /> },
             { id: "workspace", labelIt: "Workspace Findings", labelEn: "Workspace findings", icon: <Shield className="w-4 h-4" /> },
             { id: "report", labelIt: "Report Walkthrough", labelEn: "Report Walkthrough", icon: <FileText className="w-4 h-4" /> },
             { id: "cli", labelIt: "Modular CLI Toolkit", labelEn: "Modular CLI Toolkit", icon: <Code className="w-4 h-4" /> },
@@ -239,6 +241,10 @@ export default function App() {
               activeWorkspaceName={activeWorkspace}
               onAddFinding={handleAddFinding}
             />
+          )}
+
+          {activeTab === "payload" && (
+            <PayloadHelper lang={lang} />
           )}
 
           {activeTab === "workspace" && (

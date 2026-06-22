@@ -92,14 +92,18 @@ npm run start
 - **Live Output Compiler**: The generator looks inside your active workspace and dynamically formats all captured findings into clean Markdown.
 - **Direct Markdown (.md) Downloads**: Save and download your documentation inside one single document ready for your portfolio.
 
-### 6. Modular CLI Python Toolkit (Saves Offline)
+### 6. Interactive Payload Engineering & Evasion
+- **Pattern Obfuscator**: Study signature analysis on network triggers (e.g., raw reverse shells, web shells) and generate obfuscated variants (Base64 transit, Bash quote splitting, PowerShell bypasses).
+- **Security Logic Breakdowns**: Read rich AI-powered walk-throughs detailing how detection systems discover simple signatures and how behavior analytics hooks system calls.
+
+### 7. Modular CLI Python Toolkit (Saves Offline)
 - **Native Architecture Viewer**: View and learn from the native python 3 source code modular modules hierarchy (`hackpath.py`, core managers, plugins for recon, cracking, brute-force, post-exploitation).
 - **Local Download Bash Setup**: Download a unified `setup_hackpath.sh` shell script to generate the entire local, offline Python 3 directory architecture. E.g.:
   ```bash
   python3 hackpath.py run nmap --target 10.10.10.5 --mode fast --explain
   ```
 
-### 7. Integrated Host Doctor Diagnostic
+### 8. Integrated Host Doctor Diagnostic
 - Check for the availability of essential local hacking dependencies (`python3`, `nmap`, `gobuster`, `hydra`, `john`).
 - Recommends quick copy-paste commands to install them on Debian/Ubuntu/Kali Linux, macOS (Homebrew), or Windows platforms.
 
@@ -151,7 +155,7 @@ npm run start
 
 ## 🛠️ Descrizione dell'Applicazione e Funzionalità Chiave
 
-**Hackpath** è una suite didattica integrata con un design dark minimal ed elegante, progettata per razionalizzare l'apprendimento pratico della cybersecurity offensiva. L'app si articola in sei hub interattivi principali:
+**Hackpath** è una suite didattica integrata con un design dark minimal ed elegante, progettata per razionalizzare l'apprendimento pratico della cybersecurity offensiva. L'app si articola in otto hub interattivi principali:
 
 ### 1. Costruttore di Comandi e Simulatore Terminale
 - **Composizione Semplificata**: Scegli una categoria (Recon, Crack, Bruteforce, Post-Exploit) ed inserisci i target, automatizzando l'immissione della complessa sintassi CLI.
@@ -174,11 +178,15 @@ npm run start
 - Scegli un'impostazione (CTF Walkthrough accademico, Report Tecnico informale, Executive Summary strutturato).
 - Compila istantaneamente tutte le indagini e i risultati memorizzati nel Workspace prescelto convertendoli in un documento Markdown (.md) leggibile, elegante e pronto per il download.
 
-### 6. Downloader e Visualizzatore dell'Architettura CLI Python
+### 6. Ingegnere di Payload & Evasione Didattica
+- **Pattern Obfuscator**: Analizza e crea varianti offuscate (Base64 encoding, Bash quote splitting stringa `b'a's'h`, bypass PowerShell) per aggirare semplici controlli di pattern matching (come Intrusion Detection Systems).
+- **Analisi Teorica**: Spiega in dettaglio i meccanismi euristici e di runtime (AMSI, ETW hooks) usati dai sistemi difensivi per riconoscere e neutralizzare stringhe nocive in memoria.
+
+### 7. Downloader e Visualizzatore dell'Architettura CLI Python
 - Esplora interamente la struttura originale in Python 3 per l'uso locale e offline del toolkit.
 - Scarica lo script `setup_hackpath.sh` per generare all'istante la gerarchia pulita dei file del toolkit CLI sul tuo sistema.
 
-### 7. Diagnostica Host System Doctor
+### 8. Diagnostica Host System Doctor
 - Misura la disponibilità dei tool difensivi sul tuo PC (Python, Nmap, Gobuster, Hydra, John) fornendoti i comandi precisi ed immediati per l'installazione su Linux, macOS e Windows.
 
 ---

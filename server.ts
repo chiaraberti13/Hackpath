@@ -265,6 +265,54 @@ La risposta JSON deve essere:
   }
 });
 
+// 3.5. Obfuscate/Analyze Payload (AI-Powered teaching tool for shell injection & obfuscation)
+app.post("/api/obfuscate-payload", async (req, res) => {
+  if (!ai) {
+    return res.status(503).json({ error: "Gemini API is not configured." });
+  }
+
+  const { payload, encoderType, lang = "it" } = req.body;
+
+  if (!payload) {
+    return res.status(400).json({ error: "Payload is required." });
+  }
+
+  const systemPrompt = `Sei un esperto di cybersecurity ed evasion (red teaming) accademico.
+Spieghi come funzionano gli payload di exploit (come reverse shell, web shell) e descrivi tecniche di offuscamento e offuscamento didattico per evadere il rilevamento delle firme stringa statiche.
+Rispondi in lingua: ${lang === "en" ? "inglese" : "italiano"}.
+
+La struttura della risposta JSON deve essere:
+{
+  "obfuscated": "Stringa offuscata o payload alternativo bypassante (es. concatenamento Bash, variabili d'ambiente, codifica in base64, o PowerShell bypass)",
+  "explanation": "Spiegazione didattica approfondita sul perché questa variante evita le firme statiche semplici, come funzionano i sistemi di rilevamento moderni (IDS/SIEM) e come mitigare questa problematica."
+}`;
+
+  try {
+    const response = await ai.models.generateContent({
+      model: "gemini-3.5-flash",
+      contents: `Payload originale: \`${payload}\`\nTecnica desiderata: ${encoderType || "generico offuscamento"}`,
+      config: {
+        systemInstruction: systemPrompt,
+        responseMimeType: "application/json",
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            obfuscated: { type: Type.STRING },
+            explanation: { type: Type.STRING }
+          },
+          required: ["obfuscated", "explanation"]
+        }
+      }
+    });
+
+    const resultText = response.text || "{}";
+    res.json(JSON.parse(resultText));
+  } catch (error: any) {
+    console.error("Gemini Obfuscate Error:", error);
+    res.status(500).json({ error: error.message || "Impossibile offuscare il payload con Gemini." });
+  }
+});
+
 // 4. Serves the actual complete python CLI tool structural modular sources
 app.get("/api/cli-sources", (req, res) => {
   res.json({
